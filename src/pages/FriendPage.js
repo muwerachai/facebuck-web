@@ -1,4 +1,5 @@
-function FriendPage(){
-    return  <div>FriendPage</div>;
+function FriendPage() {
+    return <div>FriendPage</div>
 }
+
 export default FriendPage;
