@@ -43,7 +43,10 @@ function FriendContainer() {
   }, [pathname]);
 
   return (
-    <div className="p-3 d-none d-sm-block position-absolute tw-left-80 tw-m-5">
+    <div
+      className="p-3 d-none d-sm-block position-absolute tw-left-80 tw-m-5"
+      style={{ width: 'calc(100% - 360px)' }}
+    >
       <h1 className="text-5 mb-3 fw-bold">{getTitle(pathname)}</h1>
       <div className="row g-2">
         {friends.map(el => (

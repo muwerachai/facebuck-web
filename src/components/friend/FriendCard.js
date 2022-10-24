@@ -58,15 +58,19 @@ function FriendCard({ friend, fetchData }) {
             </div>
           )}
           {pathname === '/friend/suggestion' && (
-            <button
-              className="btn btn-primary text-3.5"
-              onClick={handleClickAddFriend}
-            >
-              Add Friend
-            </button>
+                        <div className="d-grid gap-2">
+                        <button
+                          className="btn btn-primary text-3.5"
+                          onClick={handleClickAddFriend}
+                        >
+                          Add Friend
+                        </button>
+                      </div>
           )}
           {pathname === '/friend' && (
-            <button className="btn btn-primary text-3.5">Delete</button>
+            <div className="d-grid gap-2">
+            <button className="btn btn-gray-200 text-3.5">Delete</button>
+          </div>
           )}
         </div>
       </div>
