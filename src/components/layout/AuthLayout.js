@@ -5,7 +5,9 @@ function AuthLayout() {
     return (
         <>
         <Header />
+        <div className="min-vh-100 tw-pt-14">
         <Outlet />
+        </div>
         </>
         );
     }

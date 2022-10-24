@@ -19,7 +19,7 @@ function Router(){
                 <Route path="friend" element={<Sidebar/>} >
                  <Route path="" element={<FriendPage/>} />
                  <Route path="request" element={<FriendPage/>} />
-                 <Route path="suggestions" element={<FriendPage/>} />
+                 <Route path="suggestion" element={<FriendPage/>} />
                 </Route> 
                 <Route path="profile/:id" element={<ProfilePage/>} />
             </Route>
