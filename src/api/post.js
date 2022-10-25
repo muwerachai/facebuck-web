@@ -6,3 +6,5 @@ export const createPost = (title, image) => {
   formData.append('image', image);
   return axios.post('/posts', formData);
 };
+
+export const getAllPost = () => axios.get('/users/posts');
