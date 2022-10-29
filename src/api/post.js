@@ -8,3 +8,6 @@ export const createPost = (title, image) => {
 };
 
 export const getAllPost = () => axios.get('/users/posts');
+
+export const createComment = (title, postId) =>
+  axios.post(`/posts/${postId}/comments`, { title });

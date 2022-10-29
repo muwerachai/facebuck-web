@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from '../config/axios';
 import { getAccessToken, removeAccessToken, setAccessToken } from '../services/localStorage';
@@ -51,6 +51,12 @@ const logout = () => {
   );
 }
 
+const useAuth = () => {
+  const ctx = useContext(AuthContext);
+  return ctx;
+};
+
+
 export default AuthContextProvider;
 
-export { AuthContext };
+export { AuthContext, useAuth };

@@ -1,11 +1,13 @@
 import PostBody from "./body/PostBody";
+import PostFooter from "./footer/PostFooter";
 import PostHeader from "./header/PostHeader";
 
-function PostItem() {
+function PostItem({ post }) {
     return (
     <div className="border bg-white rounded-lg  shadow-sm px-3 tw-pt-3">
-      <PostHeader />
-      <PostBody />
+      <PostHeader post={post}/>
+      <PostBody post={post}/>
+      <PostFooter post={post}/>
     </div>
     );
   }

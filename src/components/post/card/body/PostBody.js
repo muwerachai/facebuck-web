@@ -1,18 +1,14 @@
 
 
-function PostBody() {
+function PostBody({ post: { title, image } }) {
     return (
         <div className="tw-mt-3">
-        <p className="text-3.5 mb-0">
-          This classic combination is delicious, so I stick to it.
-        </p>
+      {title && <p className="text-3.5 mb-0">{title}</p>}  
+      {image && (
         <div className="-px-4 mt-3">
-          <img
-            src="https://images.unsplash.com/photo-1546069901-5ec6a79120b0"
-            alt="post"
-            className="img-fluid"
-          />
+          <img src={image} alt="post" className="img-fluid" />
         </div>
+      )}
       </div>
     );
   }
