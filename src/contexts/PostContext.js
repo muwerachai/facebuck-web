@@ -24,7 +24,7 @@ function PostContextProvider({ children }) {
   }, []);
   
     return (
-      <PostContext.Provider value={{ posts, dispatch }}>
+      <PostContext.Provider value={{ posts, dispatch, commentMapping }}>
         {children}
       </PostContext.Provider>
     );
